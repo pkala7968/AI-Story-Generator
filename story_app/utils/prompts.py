@@ -40,7 +40,7 @@ Based on this character description:
 
 Generate an image of the character. Make sure:
 - The character is the main focus
-- The background is simple or transparent
+- The background MUST be plain white/transparent
 - The character's pose and expression match their personality
 """
 

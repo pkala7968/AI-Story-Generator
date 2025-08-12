@@ -12,7 +12,7 @@ This project is a Django web application integrated with LangChain to generate c
   - Story and descriptions generation (story, character description, background description).
   - Character image generation based on character description.
   - Background image generation based on background description.
-- AI image generation using free/open-source models (e.g., Stable Diffusion via Hugging Face).
+- AI image generation using free/open-source models (e.g., FLUX via Hugging Face).
 - Image merging using PIL.
 - Displays:
   - Generated short story

@@ -23,6 +23,7 @@ def result(request):
 
         return render(request, 'result.html', {
             'story': story,
+            'char_desc': char_desc,
             'image_url': image_url
         })
     else:

@@ -1,9 +1,12 @@
 # AI Story Generator
----
 ## Overview
+
 This project is a Django web application integrated with LangChain to generate creative stories and corresponding AI-generated images. The app accepts a user prompt (text or optional audio transcription), generates a short story, detailed character and background descriptions, and produces a combined scene image by merging character and background AI-generated images.
+
 ---
+
 ## Features
+
 - User input: Text prompt for the story.
 - LangChain orchestration with separate chains for:
   - Story and descriptions generation (story, character description, background description).
@@ -15,7 +18,9 @@ This project is a Django web application integrated with LangChain to generate c
   - Generated short story
   - Character description
   - Combined scene image
+
 ---
+
 ## Getting Started
 
 ### Prerequisites
@@ -63,7 +68,9 @@ python manage.py runserver
 ```
 
 7. Open your browser and navigate to `http://localhost:8000`
+
 ---
+
 ## Check It Out! 👇
 [input](story_app/static/imgs/input.png)
 ---

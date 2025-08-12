@@ -72,8 +72,8 @@ python manage.py runserver
 ---
 
 ## Check It Out! 👇
-[input](story_app/static/imgs/input.png)
+![input](story_app/static/imgs/input.png)
 ---
-[output1](story_app/static/imgs/op1.png)
-[output2](story_app/static/imgs/op2.png)
-[output3](story_app/static/imgs/op3.png)
+![output1](story_app/static/imgs/op1.png)
+![output2](story_app/static/imgs/op2.png)
+![output3](story_app/static/imgs/op3.png)

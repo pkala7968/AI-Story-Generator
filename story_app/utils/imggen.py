@@ -1,7 +1,7 @@
 from PIL import Image, ImageOps
 import numpy as np
-from llm_chains import generate_story_and_descriptions
-from prompts import CHAR_IMG_PROMPT, BG_IMG_PROMPT
+from .llm_chains import generate_story_and_descriptions
+from .prompts import CHAR_IMG_PROMPT, BG_IMG_PROMPT
 from huggingface_hub import InferenceClient
 import os
 from dotenv import load_dotenv
@@ -12,7 +12,7 @@ HF_TOKEN  = os.getenv("HF_TOKEN")
 # client = InferenceClient(provider="fal-ai", api_key=HF_TOKEN)
 client = InferenceClient(provider="nebius",api_key=HF_TOKEN)
 
-OUTPUT_DIR = "images"
+OUTPUT_DIR = "story_app/static/story_app/images"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # model_id = "Qwen/Qwen-Image"

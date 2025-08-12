@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your AI-Generated Story</title>
+    <link rel="stylesheet" href="{% static 'story_app/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Story: </h1>
+        <p>{{ story }}</p>
+
+        <div>
+            <h2>Generated Image:</h2>
+            <img src="{% static 'story_app/images/final_scene.png' %}" alt="Generated image" style="max-width: 500px;">
+        </div>
+
+        <a href="/">Generate another story</a>
+    </div>
+</body>
+</html>

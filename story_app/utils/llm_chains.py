@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from prompts import STORY_PROMPT, CHAR_DESC_PROMPT, BG_DESC_PROMPT
+from .prompts import STORY_PROMPT, CHAR_DESC_PROMPT, BG_DESC_PROMPT
 import warnings
 
 warnings.filterwarnings("ignore")

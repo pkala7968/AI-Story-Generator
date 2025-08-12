@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Story Generator</title>
+    <link rel="stylesheet" href="{% static 'story_app/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Story Generator</h1>
+        <form action="{% url 'result' %}"  method="post">
+            <label for="prompt">Enter your story prompt:</label><br>
+            <textarea name="prompt" id="prompt" rows="5" placeholder="Once upon a time..." required></textarea><br>
+            {% csrf_token %}
+            <button type="submit">Generate Story</button>
+        </form>
+    </div>
+</body>
+</html>

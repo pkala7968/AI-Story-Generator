@@ -1,0 +1,7 @@
+django
+python-dotenv
+langchain-google-genai
+langchain
+Pillow
+numpy
+huggingface-hub

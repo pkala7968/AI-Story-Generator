@@ -33,7 +33,7 @@ This project is a Django web application integrated with LangChain to generate c
 1. Clone the repository:
 ```bash
 git clone https://github.com/pkala7968/AI-Story-Generator.git
-cd mystory
+cd AI-Story-Generator
 ```
 
 2. Create and activate a virtual environment:

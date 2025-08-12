@@ -32,20 +32,16 @@ bg_chain = LLMChain(
     prompt=PromptTemplate(template=BG_DESC_PROMPT, input_variables=["story"])
 )
 
-if __name__ == "__main__":
-    user_prompt = "generate story about a pickle who became a rapper"
-
-    # Short story
+def generate_story_and_descriptions(user_prompt):
     story_text = story_chain.run(user_prompt=user_prompt)
-    print("*"*10,"Story","*"*10,"\n")
-    print(story_text)
-
-    # Character description
     char_desc = char_chain.run(story=story_text)
-    print("\n","*"*10,"Character Description","*"*10,"\n")
-    print(char_desc)
-
-    # Background description
     bg_desc = bg_chain.run(story=story_text)
-    print("\n","*"*10,"Background Description","*"*10,"\n")
+    return story_text, char_desc, bg_desc
+
+if __name__ == "__main__":
+    story, char_desc, bg_desc = generate_story_and_descriptions("generate story about a pickle who became a rapper")
+    print(story)
+    print("*"*20)
+    print(char_desc)
+    print("*"*20)
     print(bg_desc)

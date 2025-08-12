@@ -7,15 +7,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Your Story: </h1>
-        <p>{{ story }}</p>
-
-        <div>
-            <h2>Generated Image:</h2>
-            <img src="{% static 'story_app/images/final_scene.png' %}" alt="Generated image" style="max-width: 500px;">
-        </div>
-
-        <a href="/">Generate another story</a>
+    <div class="story-header">
+        <h1>📖 Your Generated Story</h1>
     </div>
+    
+    <div class="story-content">
+        <div class="story-text">
+            <p>{{ story }}</p>
+        </div>
+        
+        <div class="character-section">
+            <h2>🎭 Character Description</h2>
+            <p>{{ char_desc }}</p>
+        </div>
+        
+        <div class="image-section">
+            <h2>🎨 Scene Visualization</h2>
+            <div class="image-container">
+                <img src="{% static 'story_app/images/final_scene.png' %}" alt="Generated scene">
+            </div>
+        </div>
+    </div>
+    
+    <div class="actions">
+        <a href="/" class="btn-secondary">Create Another Story</a>
+    </div>
+</div>
 </body>
 </html>

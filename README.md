@@ -26,21 +26,21 @@ This project is a Django web application integrated with LangChain to generate c
 This app combines **LangChain**, **Hugging Face FLUX**, and **PIL** to turn a simple text prompt into a complete illustrated scene.
 
 1. LLM Story and Description Generation (`gemini-2.0-flash`)
-Takes the user prompt and generate the following:
-- Chain A: Short story (300-500 words)
-- Chain B: Detailed character description
-- Chain C: Detailed background description
+- Takes the user prompt and generate the following:
+  - Chain A: Short story (300-500 words)
+  - Chain B: Detailed character description
+  - Chain C: Detailed background description
 
 2. Image Generation (`HuggingFace FLUX API`)
-Takes the generated descriptions and returns:
-- Character Image
-- Background Image
+- Takes the generated descriptions and returns:
+  - Character Image
+  - Background Image
 
 3. Image Merging (`PIL` + `numpy`)
-Takes the character and background images and:
-- Removes the white background from the character image and makes it transparent
-- Resizes and centers the character on the background
-- Outputs the final merged scene
+- Takes the character and background images and:
+  - Removes the white background from the character image and makes it transparent
+  - Resizes and centers the character on the background
+  - Outputs the final merged scene
 
 ---
 

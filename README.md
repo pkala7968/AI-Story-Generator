@@ -64,10 +64,10 @@ python manage.py migrate
 
 6. Start the development server:
 ```bash
-python manage.py runserver
+python manage.py runserver 127.0.0.1:8000
 ```
 
-7. Open your browser and navigate to `http://localhost:8000`
+7. Open your browser and navigate to `http://127.0.0.1:8000`
 
 ---
 
@@ -77,3 +77,4 @@ python manage.py runserver
 ![output1](story_app/static/imgs/op1.png)
 ![output2](story_app/static/imgs/op2.png)
 ![output3](story_app/static/imgs/op3.png)
+![output4](story_app/static/imgs/op4.png)
